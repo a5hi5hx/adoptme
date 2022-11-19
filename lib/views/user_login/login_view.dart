@@ -32,7 +32,7 @@ class _RegisterUserState extends State<LoginUser> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text(
-          'Register',
+          'Login',
         ),
       ),
       body: Column(

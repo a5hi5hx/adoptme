@@ -1,3 +1,3 @@
-export './user_initialization/register_user.dart';
-export './login/login_view.dart';
+export './user_register/register_user.dart';
+export './user_login/login_view.dart';
 export './display.dart';
