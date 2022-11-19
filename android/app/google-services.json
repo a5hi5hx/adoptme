@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "389254501151",
+    "project_id": "adoptme-macproject",
+    "storage_bucket": "adoptme-macproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389254501151:android:988bdfabcadb785e29562a",
+        "android_client_info": {
+          "package_name": "com.project.adoptme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389254501151-s6s04t8j93mgccpbvc7uqiu36cbbeqpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-fYUPZJrLTUQzE6mQ8dfil2GHtuUqnsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389254501151-s6s04t8j93mgccpbvc7uqiu36cbbeqpd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
