@@ -1,3 +1,7 @@
+// ignore_for_file: avoid_print
+
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:adoptme/exports.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -74,8 +78,12 @@ class _RegisterUserState extends State<LoginUser> {
                   print(e.code);
                 }
               }
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => displayDemo()));
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const VerifyEmail(),
+                ),
+              );
             },
             child: const Text("Login"),
           ),

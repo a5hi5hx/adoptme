@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class displayDemo extends StatelessWidget {
-  const displayDemo({Key? key}) : super(key: key);
+class DisplayDemo extends StatelessWidget {
+  const DisplayDemo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
