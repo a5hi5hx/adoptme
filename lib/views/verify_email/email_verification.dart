@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
+import 'package:adoptme/exports.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -16,12 +17,13 @@ class _VerifyEmailState extends State<VerifyEmail> {
   @override
   Widget build(BuildContext context) {
     if (user?.emailVerified ?? false) {
+      return DisplayDemo();
       //print("verified");
-      return const Scaffold(
-        body: Center(
-          child: Text("verified"),
-        ),
-      );
+      // return const Scaffold(
+      //   body: Center(
+      //     child: Text("verified"),
+      //   ),
+      // );
     } else {
       return emailVerify(user);
     }
