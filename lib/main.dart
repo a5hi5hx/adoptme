@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, avoid_print
+
 import 'package:flutter/material.dart';
 import './exports.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -16,17 +18,29 @@ import 'package:firebase_core/firebase_core.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-
-  runApp(
-    MaterialApp(
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    runApp(
+      MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: LoginUser(),
+      ),
+    );
+  } on Exception catch (e) {
+    runApp(MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginUser(),
-    ),
-  );
+      home: ErrorScreen(
+        msg: e.toString(),
+      ),
+    ));
+    print("not connected:$e");
+  }
 }
