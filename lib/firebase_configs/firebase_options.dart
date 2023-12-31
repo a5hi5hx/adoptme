@@ -51,11 +51,3 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA-fYUPZJrLTUQzE6mQ8dfil2GHtuUqnsM',
-    appId: '1:389254501151:android:988bdfabcadb785e29562a',
-    messagingSenderId: '389254501151',
-    projectId: 'adoptme-macproject',
-    storageBucket: 'adoptme-macproject.appspot.com',
-  );
-}
